@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.component.css">
+    <title>Contacto | Ceyma M72</title>
+</head>
+<body>
+    <h1>Contacta con nosotros</h1>
+    <h3>Si necesitas contactar con nosotros, puedes hacerlo através de los siguientes medios:</h3>
+    <div class="bloqueEmail"><h2>Email</h2><br><p>comercialceyma@gmail.com</p></div>
+    <div class="bloqueTelefono"><h2>Telefono</h2><br>952 32 16 75</div>
+    <div class="bloqueLocalizacion"><h2>Localizacion</h2>C/ Alfarnatejo (Pol. Ind. La Estrella), 15, 29006 Málaga</div>
+    <br>
+    <!--Google Maps-->
+    <div class="Horario"><h2>Horario</h2><br>Lunes-Viernes:<br>7:30 a 14:00H<br>15:30 a 18:30H</div><br>
+    <div class="enviaEmail"><h3>Envianos un email</h3><h1>¿Tienes alguna duda? Escríbenos aquí</h1></div>
+    <form action="/enviar_consulta" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+      
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br><br>
+      
+        <label for="consulta">Consulta:</label><br>
+        <textarea id="consulta" name="consulta" rows="4" cols="50" required></textarea><br><br>
+      
+        <input type="submit" value="Enviar">
+    </form><br>
+</body>
+</html>

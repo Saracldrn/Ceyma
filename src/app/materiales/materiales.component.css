@@ -1,0 +1,12 @@
+body{
+    background-color: #a5c3cf;
+}
+.materiales{
+    text-align: center;
+    margin-left: 375px;
+}
+.parrafo{
+    display: flex;
+    align-items: center;
+    background-color: #a5c3cf
+}

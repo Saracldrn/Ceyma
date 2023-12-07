@@ -1,0 +1,13 @@
+body{
+    background-color: #a5c3cf;
+}
+.escayolas{
+    text-align: center;
+    margin-left: 375px;
+    background-color: #a5c3cf;
+}
+.parrafo{
+    display: flex;
+    align-items: center;
+    background-color: #a5c3cf
+}

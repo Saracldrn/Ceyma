@@ -1,0 +1,34 @@
+.bloqueEmail{
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 5px;
+}
+
+.bloqueTelefono{
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 5px;
+}
+
+.bloqueLocalizacion{
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 5px;
+}
+
+.Horario{
+    width: 100px;
+    height: 100px;
+    background-color: #a5c3cf;
+    margin: 5px;
+}
+
+.enviarEmail{
+    width: 100px;
+    height: 100px;
+    background-color: #497a9c;
+    margin: 5px;
+}

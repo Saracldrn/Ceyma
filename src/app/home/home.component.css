@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+title {
+    color: blue;
+  }
+
+.solicitarinformacion{
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.section1{
+  background-color: #a5c3cf;
+}
+
+.escayola{
+
+}
+
+.pavimentosceramicos{
+
+}
+
+.azulejos{
+
+}
+
+.materialesconstruccion{
+
+}
+
+.Ceyma{
+  background-color:	#3b3b3b;
+  color:white
+}
+
+.GeneralProductos {
+  background-color: #a5c3cf;
+
+
+}
+
+.section2{
+  background-color: #497a9c;
+}
+
