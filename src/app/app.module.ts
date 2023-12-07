@@ -6,8 +6,10 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { EscayolasComponent } from './escayolas/escayolas.component';
 import { TechosComponent } from './techos/techos.component';
 import { MaterialesComponent } from './materiales/materiales.component';
+import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -20,10 +22,12 @@ import { FooterComponent } from './footer/footer.component';
     MaterialesComponent,
     HeaderComponent,
     FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

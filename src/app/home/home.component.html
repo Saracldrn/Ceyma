@@ -32,26 +32,11 @@
          </p>
      </div>
   <!-- Productos -->
-    <div class="GeneralProductos">
-         <div class="escayola">
-            <img src="https://images.qdq.com/07kA0vQGZZXkv8qnkpUhh5vCT0g=/800x800/smart/filters:format(JPEG)/photos/394/394007386/8af321be5993474180ba53c1dcfd661b.jpg" alt="Escayolas">
-            <h3 class="Escayolas">Escayolas</h3>
-            <p>Somos una empresa especializada en la venta de material de construcción. Entre ellos todo tipo de escayolas. Pídenos presupuesto sin compromiso. </p>
-         </div>
-         <div class="pavimentosceramicos">
-            <img src="https://images.qdq.com/n5dHn78s57UZ2q6oacSiv9LfD_A=/720x338/smart/filters:format(webp)/presence-management/cover/123/771/93113351ce8444bc8f5494f831d1c85d.jpeg" alt="Pavimentos Cerámicos">
-            <h3 class="Pavimentos Ceramicos">Pavimentos Cerámicos</h3>
-            <p>Te ofrecemos una amplia gama de pavimentos cerámicos. Tenemos la mejor solución cerámica de garantía en todos nuestros productos.</p>
-         </div>
-         <div class="azulejos">
-            <img src="https://azulisimo.com/c/566-medium_default/tin-tile-de-mainzu.jpg" alt="Azulejos">
-            <h3 class="Azulejos">Azulejos</h3>
-            <p>Somos una empresa con mucha experiencia en la venta de todo tipo de azulejos. Si estas buscando azulejos ven a Ceyma M72, disponemos de una amplia variedad de referencias</p>
-         </div>
-         <div class="materialesconstruccion">
-            <img src="https://www.mndelgolfo.com/blog/wp-content/uploads/2019/12/Consejos-para-seleccionar-los-materiales-para-la-construcci%C3%B3n-1024x576.jpg" alt="Materiales de construcción">
-            <h3 class="Materiales de construccion">Materiales de construcción</h3>
-            <p>Disponemos de una amplia variedad de materiales y herramientas de construcción. Si necesita cualquier tipo de herramienta, no dude en visitarnos</p>
+         <div class="horizontal">
+    <div class="GeneralProductos" *ngFor="let product of productsData.products">
+            <img class="imagenes" src="{{product.img}}" alt="{{product.alt}}">
+            <h3>{{product.title}}</h3>
+            <p>{{product.description}}</p>
          </div>
          <br>
     </div>

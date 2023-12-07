@@ -20,8 +20,8 @@ title {
   background-color: #a5c3cf;
 }
 
-.escayola{
-
+.Escayolas{
+  color: red;
 }
 
 .pavimentosceramicos{
@@ -40,10 +40,26 @@ title {
   background-color:	#3b3b3b;
   color:white
 }
+.imagenes{
+  width: 200px;
+  height: 200px;
+  border-radius: inherit;
+  opacity: 1;
+  box-sizing: border-box;
+  aspect-ratio: auto 200 / 200;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+
+.horizontal{
+  display:flex;
+  align-items:center;
+}
 
 .GeneralProductos {
   background-color: #a5c3cf;
-
+  vertical-align: middle;
 
 }
 
