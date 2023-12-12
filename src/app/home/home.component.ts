@@ -9,15 +9,21 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent {
 
-  
   productsData:any;
-  url: string = '/assets/elements.json';
+  urlProducts: string = '/assets/elements.json';
+
+  marcasData:any;
+  urlMarcas: string = '/assets/marcas.json';
 
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.http.get(this.url).subscribe(res => {
+    this.http.get(this.urlProducts).subscribe(res => {
       this.productsData = res;
+    });
+
+    this.http.get(this.urlMarcas).subscribe(res => {
+      this.marcasData = res;
     });
   }
 }

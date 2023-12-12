@@ -10,3 +10,12 @@ body{
     align-items: center;
     background-color: #a5c3cf
 }
+img{
+    margin-top: 0px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+}
+p{
+    margin-right: 70px;
+}

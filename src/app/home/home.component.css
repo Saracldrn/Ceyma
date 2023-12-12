@@ -20,26 +20,11 @@ title {
   background-color: #a5c3cf;
 }
 
-.Escayolas{
-  color: red;
-}
-
-.pavimentosceramicos{
-
-}
-
-.azulejos{
-
-}
-
-.materialesconstruccion{
-
-}
-
 .Ceyma{
   background-color:	#3b3b3b;
   color:white
 }
+
 .imagenes{
   width: 200px;
   height: 200px;
@@ -61,6 +46,10 @@ title {
   background-color: #a5c3cf;
   vertical-align: middle;
 
+}
+
+.Marcas{
+  vertical-align: middle;
 }
 
 .section2{

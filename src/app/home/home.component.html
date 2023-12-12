@@ -48,13 +48,13 @@
       <h2>Solicitar información</h2>
      <h1>Contacto</h1>
      <form action="#" method="post">
-         <label for="nombre">Nombre:</label><br>
+         <label for="nombre">Nombre*</label><br>
          <input type="text" id="nombre" name="nombre" required><br>
-         <label for="telefono">Teléfono:</label><br>
+         <label for="telefono">Teléfono*</label><br>
          <input type="tel" id="telefono" name="telefono" required ><br>
-         <label for="email">Correo electrónico:</label><br>
+         <label for="email">Correo electrónico*</label><br>
          <input type="email" id="email" name="email" required><br>
-         <label for="mensaje">Mensaje:</label><br>
+         <label for="mensaje">Mensaje*</label><br>
          <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br>
          <input type="submit" value="Enviar">
       </form>
@@ -78,16 +78,12 @@
 
 
   <!-- Section 4 Marcas -->
-  <section>
-     <h2>Marcas con las que trabajamos</h2>
-     <img src="https://ekr.it/wp-content/uploads/assets/low/Fassa%20Bortolo%20logo.jpg" alt="Fassa Bortolo, calidad para la construcción" width="250" height="200">
-     <img src="https://www.knauf.es/themes/custom/knauf/img/logo.png" alt="Knauf" width="250" height="180">
-     <img src="https://media.licdn.com/dms/image/C4E0BAQF4uUOpXfdmTA/company-logo_200_200/0/1631355288611?e=2147483647&v=beta&t=nXGXqOukLQStJt8Rj9KIc--kSLQd76bKNVJHA4u5evY" alt="Cementos Capa" width="200" height="200">
-     <img src="http://escayescos.com/wp-content/uploads/2019/07/logo_escayescos_color-burdeos-01.png" alt="Escayescos" width="300" height="150">
-     <img src="https://e-ficiencia.com/a/2020/01/placo-saint-gobain-logo.jpg" alt="Placo" width="250" height="150">
-     <img src="https://landing.rubi.com/hs-fs/hubfs/logo_RUBI-2020.png?width=900&height=900&name=logo_RUBI-2020.png" alt="Rubi" width="200" height="200">
-     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Skil_logo.svg/200px-Skil_logo.svg.png" alt="Skil" width="300" height="150"> 
-  </section>
+  
+   <h2>Marcas con las que trabajamos</h2>
+   <div class="Marcas" *ngFor="let marcas of marcasData.marcas">
+      <img class="imagenes" src="{{marcas.img}}" alt="{{marcas.alt}}" width="{{marcas.width}}" height="{{marcas.height}}">
+   </div>
+
   <br>
 
 
