@@ -9,6 +9,7 @@
   .dropdown {
     position: relative;
     display: inline-block;
+    text-align: left;
   }
   
   .dropdown-content {
@@ -31,3 +32,13 @@
   .dropdown:hover .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {color: grey;}
+
+  .fas fa-phone{
+    text-align: left;
+  }
+  .fas fa-envelope{
+    text-align: left;
+  }
+  .contacto{
+    text-align: right;
+  }
