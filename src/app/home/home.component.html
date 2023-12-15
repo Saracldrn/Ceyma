@@ -66,7 +66,6 @@
  <!-- Section 3 -->
   <section>
    <div class="Ceyma">
-      <br>
      <h2>Ceyma M72</h2>
      <p>En Ceyma M.72 somos una empresa especializada en la venta de materiales de construcción en Málaga. Ponemos a su disposición una amplia gama de materiales de construcción como yeso, escayola, ladrillos, arenas, azulejos, cementos, cementos cola, cubas, etc. Contamos con una gran experiencia en el sector de más de 15 años, por lo que disponemos de profesionales muy cualificados en el sector de la construcción. Ofrecemos la venta de materiales y herramientas para la construcción, yeso, escayolas, etc. Trabajamos siempre con las mejores marcas reconocidas del mercado ofreciendo siempre a nuestros clientes los mejores productos y servicios. Le ofrecemos asesoramiento por parte de nuestros empleados con gran experiencia en el sector para cualquier trabajo que vaya a realizar de acabado en escayola, pladur, aislantes, etc.  Nuestro compromiso con el cliente es nuestra filosofía de trabajo, ofreciéndole servicio y calidad.</p>
      <br>
@@ -78,12 +77,15 @@
 
 
   <!-- Section 4 Marcas -->
-  
+  <section>
    <h2>Marcas con las que trabajamos</h2>
-   <div class="Marcas" *ngFor="let marcas of marcasData.marcas">
-      <img class="imagenes" src="{{marcas.img}}" alt="{{marcas.alt}}" width="{{marcas.width}}" height="{{marcas.height}}">
+   <div class="Marcas" >
+      <div class="MarcasFor" *ngFor="let marcas of marcasData.marcas">
+         <img class="imagenes" src="{{marcas.img}}" alt="{{marcas.alt}}" width="{{marcas.width}}" height="{{marcas.height}}">
+      </div>
    </div>
 
+</section>
   <br>
 
 

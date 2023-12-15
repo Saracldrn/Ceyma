@@ -17,17 +17,19 @@ title {
 }
 
 .section1{
+  padding: 10px 20px;
   background-color: #a5c3cf;
 }
 
 .Ceyma{
+  padding: 10px 20px;
   background-color:	#3b3b3b;
   color:white
 }
 
 .imagenes{
-  width: 200px;
-  height: 200px;
+  height: auto;
+  max-width: 100%;
   border-radius: inherit;
   opacity: 1;
   box-sizing: border-box;
@@ -45,14 +47,21 @@ title {
 .GeneralProductos {
   background-color: #a5c3cf;
   vertical-align: middle;
-
+  text-align: center;
 }
 
 .Marcas{
-  vertical-align: middle;
+  margin-right: 5.5%;
+  margin-left: 5.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .section2{
+  padding: 10px 20px;
   background-color: #497a9c;
 }
 
