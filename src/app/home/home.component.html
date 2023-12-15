@@ -33,11 +33,15 @@
      </div>
   <!-- Productos -->
          <div class="horizontal">
-    <div class="GeneralProductos" *ngFor="let product of productsData.products">
-            <img class="imagenes" src="{{product.img}}" alt="{{product.alt}}">
-            <h3>{{product.title}}</h3>
+            <table>
+    <td class="GeneralProductos" *ngFor="let product of productsData.products">
+      <tr>
+            <div class="divImagenes"><img class="imagenes" src="{{product.img}}" alt="{{product.alt}}"></div>
+            <h4>{{product.title}}</h4>
             <p>{{product.description}}</p>
-         </div>
+         </tr>
+         </td>
+      </table>
          <br>
     </div>
   </section>
@@ -61,6 +65,7 @@
          <!--Boton para solicitar informacion-->
       <br>
       <br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8165.902289201261!2d-4.477242785374877!3d36.70344026181934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f750ebfb891b%3A0x53296b95f7be0ce4!2sCeyma%20M.72!5e0!3m2!1ses!2ses!4v1702655254234!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
 
  <!-- Section 3 -->
@@ -81,7 +86,7 @@
    <h2>Marcas con las que trabajamos</h2>
    <div class="Marcas" >
       <div class="MarcasFor" *ngFor="let marcas of marcasData.marcas">
-         <img class="imagenes" src="{{marcas.img}}" alt="{{marcas.alt}}" width="{{marcas.width}}" height="{{marcas.height}}">
+         <img class="imagenesMarcas" src="{{marcas.img}}" alt="{{marcas.alt}}" width="{{marcas.width}}" height="{{marcas.height}}">
       </div>
    </div>
 

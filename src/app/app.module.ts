@@ -12,6 +12,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import {IvyCarouselModule} from 'angular-responsive-carousel';
+import {MatDialogModule} from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 
@@ -31,6 +34,8 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     AppRoutingModule,
     HttpClientModule,
     IvyCarouselModule,
+    MatDialogModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

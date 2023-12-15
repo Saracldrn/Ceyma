@@ -27,9 +27,13 @@ title {
   color:white
 }
 
+.divImagenes{
+  height: 210px;
+}
 .imagenes{
-  height: auto;
-  max-width: 100%;
+  padding: 20px 20px;
+  width: 80%;
+  height: 200px;
   border-radius: inherit;
   opacity: 1;
   box-sizing: border-box;
@@ -42,12 +46,22 @@ title {
 .horizontal{
   display:flex;
   align-items:center;
+  justify-content: space-around;
 }
-
+table td {
+  width: 25%; /* Para que cada celda ocupe el 25% del ancho total */
+  text-align: center;
+  padding: 5px;
+}
 .GeneralProductos {
   background-color: #a5c3cf;
   vertical-align: middle;
   text-align: center;
+}
+.imagenesMarcas{
+
+  height: auto;
+  max-width: 100%;
 }
 
 .Marcas{
