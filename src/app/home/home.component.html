@@ -31,17 +31,30 @@
             <!--Boton para solicitar informacion-->
          </p>
      </div>
+     
+			<carousel
+         [cellsToShow]="1"
+         [height]="200">
+				
+            <div *ngFor="let product of productsData.products">
+               <img class="imagenes" src="{{product.img}}" alt="{{product.alt}}">
+               <h4>{{product.title}}</h4>
+                  
+               <p>{{product.description}}</p>
+               </div>
+			</carousel>
+
   <!-- Productos -->
          <div class="horizontal">
             <table>
-    <td class="GeneralProductos" *ngFor="let product of productsData.products">
-      <tr>
-            <div class="divImagenes"><img class="imagenes" src="{{product.img}}" alt="{{product.alt}}"></div>
-            <h4>{{product.title}}</h4>
-            <p>{{product.description}}</p>
-         </tr>
-         </td>
-      </table>
+            <td class="GeneralProductos" *ngFor="let product of productsData.products">
+               <tr>
+                  <div class="divImagenes"><img class="imagenes" src="{{product.img}}" alt="{{product.alt}}"></div>
+                  <h4>{{product.title}}</h4>
+                  <p>{{product.description}}</p>
+               </tr>
+            </td>
+            </table>
          <br>
     </div>
   </section>
@@ -82,7 +95,7 @@
 
 
   <!-- Section 4 Marcas -->
-  <section>
+  <section class="todasMarcas">
    <h2>Marcas con las que trabajamos</h2>
    <div class="Marcas" >
       <div class="MarcasFor" *ngFor="let marcas of marcasData.marcas">

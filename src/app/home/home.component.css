@@ -6,6 +6,10 @@ title {
     color: blue;
   }
 
+h1{
+  text-align: center;
+}
+
 .solicitarinformacion{
   padding: 10px 20px;
   background-color: #3498db;
@@ -32,7 +36,7 @@ title {
 }
 .imagenes{
   padding: 20px 20px;
-  width: 80%;
+  width: 200px;
   height: 200px;
   border-radius: inherit;
   opacity: 1;
@@ -42,6 +46,11 @@ title {
   overflow: clip;
 }
 
+.carouselHome{
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+}
 
 .horizontal{
   display:flex;
@@ -55,7 +64,6 @@ table td {
 }
 .GeneralProductos {
   background-color: #a5c3cf;
-  vertical-align: middle;
   text-align: center;
 }
 .imagenesMarcas{
@@ -65,6 +73,7 @@ table td {
 }
 
 .Marcas{
+  padding: 10px 20px;
   margin-right: 5.5%;
   margin-left: 5.5%;
   display: -webkit-box;
@@ -73,7 +82,10 @@ table td {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-
+.todasMarcas{
+  
+  padding: 10px 20px;
+}
 .section2{
   padding: 10px 20px;
   background-color: #497a9c;
