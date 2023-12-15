@@ -10,7 +10,6 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 
@@ -31,7 +30,6 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgbModule,
     IvyCarouselModule,
   ],
   providers: [],
