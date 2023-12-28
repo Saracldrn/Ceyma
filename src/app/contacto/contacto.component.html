@@ -6,27 +6,33 @@
     <link rel="stylesheet" href="contacto.component.css">
     <title>Contacto | Ceyma M72</title>
 </head>
+
 <body>
-    <h1>Contacta con nosotros</h1>
-    <h3>Si necesitas contactar con nosotros, puedes hacerlo através de los siguientes medios:</h3>
-    <div class="bloqueEmail"><h2>Email</h2><br><p>comercialceyma@gmail.com</p></div>
-    <div class="bloqueTelefono"><h2>Telefono</h2><br>952 32 16 75</div>
-    <div class="bloqueLocalizacion"><h2>Localizacion</h2>C/ Alfarnatejo (Pol. Ind. La Estrella), 15, 29006 Málaga</div>
-    <br>
+        <br><h2 class="contacta">Contacta con nosotros</h2>
+        <h4>Si necesitas contactar con nosotros, puedes hacerlo através de los siguientes medios:</h4><br>
+    <div class="verticalidad">
+        <div class="bloques">
+            <div class="bloqueEmail"><h5>Email</h5>comercialceyma@gmail.com</div><br>
+            <div class="bloqueTelefono"><h5>Teléfono</h5>952 32 16 75</div><br>
+            <div class="bloqueLocalizacion"><h5>Localización</h5>C/ Alfarnatejo (Pol. Ind. La Estrella), 15, 29006 Málaga</div><br>
+            <div class="Horario"><h5>Horario</h5>Lunes-Viernes:<br>7:30 a 14:00H<br>15:30 a 18:30H</div><br>
+            <br>
+        </div>
     <!--Google Maps-->
-    <div class="Horario"><h2>Horario</h2><br>Lunes-Viernes:<br>7:30 a 14:00H<br>15:30 a 18:30H</div><br>
-    <div class="enviaEmail"><h3>Envianos un email</h3><h1>¿Tienes alguna duda? Escríbenos aquí</h1></div>
-    <form action="/enviar_consulta" method="post">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" required><br><br>
-      
-        <label for="correo">Correo electrónico:</label><br>
-        <input type="email" id="correo" name="correo" required><br><br>
-      
-        <label for="consulta">Consulta:</label><br>
-        <textarea id="consulta" name="consulta" rows="4" cols="50" required></textarea><br><br>
-      
-        <input type="submit" value="Enviar">
-    </form><br>
+    
+        <form (ngSubmit)="sendEmail(userData)" >
+            <h2>Si tienes alguna duda, consulta aquí</h2>
+                <label for="nombre">Nombre*</label><br>
+                <input type="text" id="nombre" name="nombre" required [(ngModel)]="userData.nombre"><br>
+                <label for="telefono">Teléfono*</label><br>
+                <input type="tel" id="telefono" name="telefono" required [(ngModel)]="userData.telefono"><br>
+                <label for="email">Correo electrónico*</label><br>
+                <input type="email" id="email" name="email" required [(ngModel)]="userData.email"><br>
+                <label for="mensaje">Mensaje*</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required [(ngModel)]="userData.mensaje"></textarea><br>
+                <input type="submit" [disabled]="!userData.email || !userData.telefono || !userData.mensaje || !userData.nombre" value="Enviar">
+        </form>
+    </div>
 </body>
+
 </html>

@@ -27,7 +27,8 @@
             Email: comercialceyma@gmail.com <br>
             C/ Alfarnatejo (Pol. Ind. La Estrella), 15, 29006 Málaga
             <br>
-            <button class="solicitarinformacion">Solicitar información</button>
+            <br>
+            <button class="solicitarinformacion" (click)="scrollToSection()">Solicitar información</button>
             <!--Boton para solicitar informacion-->
          </p>
      </div>
@@ -48,26 +49,30 @@
   </section>
 
   <!-- Section 2 Enviar informacion -->
-  <section class="section2">
-   <br>
+
+
+  <section class="section2" id="section2">
+   <br>   
+     <form (ngSubmit)="sendEmail(userData)" >
+      <h1 style="margin-left: 80%;">Contacto</h1>
       <h2>Solicitar información</h2>
-     <h1>Contacto</h1>
-     <form action="#" method="post">
          <label for="nombre">Nombre*</label><br>
-         <input type="text" id="nombre" name="nombre" required><br>
+         <input type="text" id="nombre" name="nombre" required [(ngModel)]="userData.nombre"><br>
          <label for="telefono">Teléfono*</label><br>
-         <input type="tel" id="telefono" name="telefono" required ><br>
+         <input type="tel" id="telefono" name="telefono" required [(ngModel)]="userData.telefono"><br>
          <label for="email">Correo electrónico*</label><br>
-         <input type="email" id="email" name="email" required><br>
+         <input type="email" id="email" name="email" required [(ngModel)]="userData.email"><br>
          <label for="mensaje">Mensaje*</label><br>
-         <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br>
-         <input type="submit" value="Enviar">
+         <textarea id="mensaje" name="mensaje" rows="4" cols="50" required [(ngModel)]="userData.mensaje"></textarea><br>
+         <input type="submit" [disabled]="!userData.email || !userData.telefono || !userData.mensaje || !userData.nombre" value="Enviar">
       </form>
          <!--Boton para solicitar informacion-->
       <br>
       <br>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8165.902289201261!2d-4.477242785374877!3d36.70344026181934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f750ebfb891b%3A0x53296b95f7be0ce4!2sCeyma%20M.72!5e0!3m2!1ses!2ses!4v1702655254234!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
+      <div class="maps">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8165.902289201261!2d-4.477242785374877!3d36.70344026181934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f750ebfb891b%3A0x53296b95f7be0ce4!2sCeyma%20M.72!5e0!3m2!1ses!2ses!4v1702655254234!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+   </section>
 
  <!-- Section 3 -->
   <section>
@@ -93,7 +98,5 @@
 
 </section>
   <br>
-
-
 </body>
 </html>

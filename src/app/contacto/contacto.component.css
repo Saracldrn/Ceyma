@@ -1,34 +1,32 @@
-.bloqueEmail{
-    width: 100%;
-    height: 100px;
-    background-color: #ccc;
-    margin: 5px;
+.contacta{
+    margin-left: 5%;
 }
 
-.bloqueTelefono{
-    width: 100%;
-    height: 100px;
-    background-color: #ccc;
-    margin: 5px;
+h4{
+    margin-left: 5%;
 }
 
-.bloqueLocalizacion{
-    width: 100%;
-    height: 100px;
-    background-color: #ccc;
-    margin: 5px;
+.bloques{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
 }
 
-.Horario{
-    width: 100%;
-    height: 100px;
+.verticalidad{
+    display: flex;
+    background-color: rgba(165, 195, 207);
+    position: relative;
+    z-index: 1;
+}
+
+form{
+    text-align: right;
+    margin-left: 25%;
+}
+
+body{
     background-color: #a5c3cf;
-    margin: 5px;
+
 }
 
-.enviarEmail{
-    width: 100%;
-    height: 100px;
-    background-color: #497a9c;
-    margin: 5px;
-}
+
