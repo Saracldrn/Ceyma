@@ -1,14 +1,17 @@
 .dropbtn {
     color: black;
-    padding: 16px;
+    padding: 14px;
     font-size: 16px;
     border: none;
     background-color: white;  
+    cursor: pointer;
+    display: inline-block;
   }
   
   .dropdown {
     position: relative;
     display: inline-block;
+    cursor: pointer;
     text-align: right;
   }
   
@@ -36,7 +39,7 @@
 
   .logo{
     margin-left: 2% ;
-    width: 10%;
+    width: 20%;
   }
   .tellamamos {
     border: none;
@@ -45,6 +48,43 @@
     font-size: 16px;
     cursor: pointer;
     display: inline-block;
+  }
+
+  .all{
+    display: inline-block;
+    width: 100%;
+  }
+
+  .derecha{
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 45%;
+  }
+  @media screen and (max-width: 1200px) {
+    .derecha {
+      margin-left: 40%; /* Cambia el ancho del elemento cuando el ancho de la pantalla sea menor o igual a 600px */
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .derecha {
+      margin-left: 30%; /* Cambia el ancho del elemento cuando el ancho de la pantalla sea menor o igual a 600px */
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .derecha {
+      margin-left: 20%; /* Cambia el ancho del elemento cuando el ancho de la pantalla sea menor o igual a 600px */
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .derecha {
+      margin-left: 10%; /* Cambia el ancho del elemento cuando el ancho de la pantalla sea menor o igual a 600px */
+    }
+  }
+  @media screen and (max-width: 570px) {
+    .derecha {
+      margin-left: 0%; /* Cambia el ancho del elemento cuando el ancho de la pantalla sea menor o igual a 600px */
+    }
   }
 
   

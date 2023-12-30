@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
+import { TellamamosComponent } from '../tellamamos/tellamamos.component';
 
 @Component({
   selector: 'app-header',
@@ -11,18 +12,8 @@ export class HeaderComponent {
   constructor(public dialog: MatDialog) {}
 
   openDialog(): void {
-    const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
+    const dialogRef = this.dialog.open(TellamamosComponent, {
       width: '250px',
     });
   }
-}
-
-
-@Component({
-  selector: 'dialog-overview-example-dialog',
-  templateUrl: 'dialog-overview-example-dialog.html',
-})
-export class DialogOverviewExampleDialog {
-
-
 }

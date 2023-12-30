@@ -1,3 +1,17 @@
+body{
+  background-image: linear-gradient(180deg,rgba(78, 17, 17, 0.27) 1%,#111368 99%),url(https://www.ceymam72.es/wp-content/uploads/2020/07/venta-de-escayola-en-malaga-scaled.jpg)!important;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+  opacity: 1; /* Cambia el valor de opacidad según lo que desees */
+  height: 100vh; /* Ajusta la altura según sea necesario */
+}
+
+.contenido {
+    opacity: 1; /* Cambia el valor de opacidad según lo que desees */
+    position: relative;
+    z-index: 1; /* Coloca este contenido por encima de la imagen de fondo */
+    color: white; /* Color del texto para que sea legible en la imagen de fondo */
+  }
 .contacta{
     margin-left: 5%;
 }
@@ -14,18 +28,18 @@ h4{
 
 .verticalidad{
     display: flex;
-    background-color: rgba(165, 195, 207);
+    /*background-color: rgba(165, 195, 207);*/
     position: relative;
     z-index: 1;
 }
 
 form{
-    text-align: right;
+    text-align: left;
     margin-left: 25%;
 }
 
 body{
-    background-color: #a5c3cf;
+    /*background-color: #a5c3cf;*/
 
 }
 
