@@ -1,17 +1,11 @@
 {
-    "routes": {
-      "/": "index.html",
-      "/home": "index.html",
-      "/contacto": "index.html",
-      "/techos": "index.html",
-      "/escayolas": "index.html",
-      "/materiales": "index.html",
-      "": "index.html",
-      "/**": "index.html"
-    },
-    "navigationFallback": {
-      "rewrite": "index.html",
-      "exclude": ["/api/*"]
-    },
-    "appArtifactLocation": "dist"
+    "routes": [
+      { "route": "/home", "serve": "/index.html", "statusCode": 200 },
+      { "route": "/contacto", "serve": "/index.html", "statusCode": 200 },
+      { "route": "/techos", "serve": "/index.html", "statusCode": 200 },
+      { "route": "/escayolas", "serve": "/index.html", "statusCode": 200 },
+      { "route": "/materiales", "serve": "/index.html", "statusCode": 200 },
+      { "route": "", "serve": "/index.html", "statusCode": 200 },
+      { "route": "/**", "serve": "/index.html", "statusCode": 200 }
+    ]
   }
