@@ -1,11 +1,11 @@
 {
     "routes": [
-      { "route": "/home", "serve": "/index.html", "statusCode": 200 },
-      { "route": "/contacto", "serve": "/index.html", "statusCode": 200 },
-      { "route": "/techos", "serve": "/index.html", "statusCode": 200 },
-      { "route": "/escayolas", "serve": "/index.html", "statusCode": 200 },
-      { "route": "/materiales", "serve": "/index.html", "statusCode": 200 },
-      { "route": "", "serve": "/index.html", "statusCode": 200 },
-      { "route": "/**", "serve": "/index.html", "statusCode": 200 }
+      { "route": "/home"},
+      { "route": "/contacto"},
+      { "route": "/techos"},
+      { "route": "/escayolas"},
+      { "route": "/materiales"},
+      { "route": ""},
+      { "route": "/**"}
     ]
   }
