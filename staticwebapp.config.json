@@ -2,15 +2,7 @@
     "trailingSlash": "auto",
     "routes": [
       {
-        "route": "/home*"
-      },
-      {
-        "route": "/contacto*",
-        "allowedRoles": ["administrator"]
-      },
-      {
-        "route": "/escayolas*",
-        "allowedRoles": ["administrator"]
+        "route": "/*"
       }
     ],
     "navigationFallback": {
