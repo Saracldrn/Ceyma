@@ -20,7 +20,7 @@
     position: absolute;
     background-color: #3b3b3b;
     min-width: 160px;
-    z-index: 1;
+    z-index: 1000;
   }
   
   .dropdown-content a {
