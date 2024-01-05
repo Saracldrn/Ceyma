@@ -1,6 +1,14 @@
-
-.footer{
-    padding: 10px 20px;
+.general{
     background-color: #69231f;
-    color: white
+    color: white;
+    padding: 10px 20px;
+
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
  }
+.Contacte{
+    width: 45%;
+}
+
