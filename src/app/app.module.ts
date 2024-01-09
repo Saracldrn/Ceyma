@@ -11,7 +11,6 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 import {IvyCarouselModule} from 'angular-responsive-carousel';
@@ -41,8 +40,7 @@ import { TellamamosComponent } from './tellamamos/tellamamos.component';
     IvyCarouselModule,
     MatDialogModule,
     BrowserAnimationsModule,
-    FormsModule,
-    FlexLayoutModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
