@@ -3,7 +3,7 @@ body{
     display:flex;
 }
 .escayolas{
-    width: 25%; /* Para que cada celda ocupe el 25% del ancho total */
+    width: 25%; 
     text-align: center;
     padding: 5px;
 }

@@ -63,27 +63,27 @@
   }
   @media screen and (max-width: 1200px) {
     .derecha {
-      margin-left: 40%; /* Cambia el ancho del elemento cuando el ancho de la pantalla sea menor o igual a 600px */
+      margin-left: 40%;
     }
   }
   @media screen and (max-width: 1000px) {
     .derecha {
-      margin-left: 30%; /* Cambia el ancho del elemento cuando el ancho de la pantalla sea menor o igual a 600px */
+      margin-left: 30%;
     }
   }
   @media screen and (max-width: 800px) {
     .derecha {
-      margin-left: 20%; /* Cambia el ancho del elemento cuando el ancho de la pantalla sea menor o igual a 600px */
+      margin-left: 20%;
     }
   }
   @media screen and (max-width: 650px) {
     .derecha {
-      margin-left: 10%; /* Cambia el ancho del elemento cuando el ancho de la pantalla sea menor o igual a 600px */
+      margin-left: 10%;
     }
   }
   @media screen and (max-width: 570px) {
     .derecha {
-      margin-left: 0%; /* Cambia el ancho del elemento cuando el ancho de la pantalla sea menor o igual a 600px */
+      margin-left: 0%;
     }
   }
 

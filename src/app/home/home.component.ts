@@ -54,23 +54,6 @@ export class HomeComponent {
       this.marcasData = res;
     });
   }
-  /*
-  url_hotmail = ""
-  url_gmail = "https://mail.google.com/mail/u/0/?view=cm&fs=1&to=comercialceyma@gmail.com&tf=1";
-  public openGmail(email:string){
-    var company = email.split("@")[1].split(".")[0]
-    switch(company){
-      case "gmail":    
-        window.open(this.url_gmail, "_blank");
-      case "hotmail" || "outlook":
-
-      default:
-        window.open("mailto:comercialceyma@gmail.com")
-        
-    }
-
-  }*/
-
 
 }
 
